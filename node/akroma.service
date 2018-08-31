@@ -1,0 +1,11 @@
+[Unit]
+Description=Akroma node for Pool
+After=network-online.target
+
+[Service]
+ExecStart=/home/akroma/akroma.cryptopools.info/node/geth --etherbase="0x6819296e67e7fe993a024b764601f1113867b7e5" --maxpeers="100" --extradata="cryptopools.info" --identity="CryptoPools.info - Phatblinkie@hotmail.com for info" --rpc --rpcport="9331" --rpcaddr="127.0.0.1" --rpcapi="eth,net,web3" --unlock="0x6819296e67e7fe993a024b764601f1113867b7e5" --password="/home/akroma/.walletpass" --ethstats="AKROMA.CRYPTOPOOLS.INFO:akroma300K@stats.akroma.io:80"
+User=akroma
+
+[Install]
+WantedBy=multi-user.target
+
