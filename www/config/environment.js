@@ -19,7 +19,7 @@ module.exports = function(environment) {
       PoolName: 'AKROMA Pool',
       CompanyName: 'CryptoPools.info',
       // HTTP mining endpoint
-      HttpHost: 'https://Akroma.CryptoPools.info',
+      HttpHost: 'Akroma.CryptoPools.info',
       HttpPort: 8882,
 
       // Stratum mining endpoint
